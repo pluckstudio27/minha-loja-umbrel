@@ -1,0 +1,40 @@
+# Local: gerador-excel/umbrel-app.yml
+
+# ID da aplicação (deve ser o mesmo nome da pasta)
+id: "gerador-excel" 
+
+# Nome da aplicação que aparecerá na loja
+name: "Gerador de Excel" 
+
+# Versão da aplicação
+version: "1.0.0" 
+
+# Categoria na App Store do Umbrel
+category: "Productivity" 
+
+# Seu nome ou nome de usuário
+developer: "Seu Nome" 
+
+# Porta INTERNA da aplicação (a mesma do app.py e do Dockerfile)
+port: 8000
+
+# Descrição curta (tagline)
+tagline: "Preencha um formulário e crie uma planilha"
+
+# Descrição mais longa
+description: >-
+  Esta aplicação permite criar um registro de demanda através de um formulário web simples. 
+  Após preencher os campos, um arquivo Excel (.xlsx) é gerado e disponibilizado para download, 
+  facilitando a padronização e o controle de novas solicitações.
+
+# Ícone da aplicação. Crie um arquivo PNG ou SVG chamado "icon.svg" 
+# e coloque-o na mesma pasta (gerador-excel/icon.svg)
+icon: "icon.svg"
+
+# URL para mais informações (pode ser o seu GitHub)
+website: "https://github.com/pluckstudio27/pluck-app-store"
+
+# Informações para o Docker Compose
+compose:
+  # O nome do serviço principal no seu docker-compose.yml
+  main: "app"

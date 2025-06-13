@@ -1,0 +1,12 @@
+# Local: gerador-excel/docker-compose.yml
+version: '3.7'
+
+services:
+  app:
+    # O nome da imagem será o ID da pasta, o que é uma boa prática
+    image: gerador-excel:latest
+    build: .
+    restart: unless-stopped
+    # A porta INTERNA da aplicação é 8000. O Umbrel gerenciará a porta externa.
+    ports:
+      - "8000"

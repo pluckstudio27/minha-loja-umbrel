@@ -1,0 +1,4 @@
+# ID único para sua loja de apps. Use o nome do seu repositório.
+id: "minha-loja-umbrel" 
+# Nome que aparecerá no Umbrel.
+name: "Minha Loja de Apps"
